@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>	
+<head>
+<title>nayaz login form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="Coupled Login Form Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900" rel="stylesheet">
+
+
+</head>
+
+<style>
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #fff;
+  color: black;
+}
+
+/* Twitter */
+.fa-google {
+  background: #fff;
+  color: black;
+}
+
+.fa-linkedin {
+  background: #fff;
+  color: black;
+}
+
+</style>
+<script>  
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false; 
+  }
+}   
+</script> 
+<body>
+
+<section  class="register">
+	
+
+		<div class="register-left">
+		
+			<div class="register-in">
+			<h3>Sign in</h3>
+			<div  style="margin-left: 35px; margin-top: 4px"class="nayaz">
+			<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a><br>
+<h6 style="text-align:center;">or use your account</h6><br>
+</div>
+			
+				<form action="#" method="post" onsubmit="return validateemail()">
+						<div class="fields-grid">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="Email" required=""> 
+								<label>Email</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="password" name="password" required="">
+								<label>Password</label>
+								<span></span>
+							</div>
+							
+							<div class="clear"> </div>
+							 
+						</div>
+						<h2 style="text-align:center; color:bloack;" >Forgot Password?</h2>
+						<div class="w3_lgn">
+						<input type="submit" value="SIGN IN">
+						</div>
+					</form>
+			</div>
+		</div>
+		<div class="register-right">
+			<div class="register-in">
+				<h2 style="text-align:center; color:white;" >Hello, Friend!</h2>
+				<p>Enter your personal details and start journey with us</p>
+				<div class="register-form">
+					<form action="indexflip.html" method="post">
+						<div class="fields-grid">
+							
+							
+							
+							
+							
+							<div class="clear"> </div>
+							
+						</div>
+						<div class="w3_lgn1">
+						<input type="submit" value="SIGN UP">
+						</div>
+					</form>
+			
+				</div>
+			</div>
+			
+			<div class="clear"> </div>
+		</div>
+	<div class="clear"> </div>
+	
+		
+	
+</section>
+
+
+</body>
+</html>
